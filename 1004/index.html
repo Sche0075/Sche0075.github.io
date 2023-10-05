@@ -1,17 +1,63 @@
 <html>
 
 <head>
-    <title>Scheetz Jameson October 4 Lecture Code</title>
+    <link rel="icon" href="img/cs.png"/> <!--Small image at top of title-->
+    <title> MIS3033 Scheetz Jameson October 4</title>
+
+    <style>
+        .divstyle1 /*This is for a class that we can use or call for other divs*/ {
+            width: 100px;
+            height: 50px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: grey;
+            border-radius: 10px;
+            margin-top:10px; /*This changes the margin on the top*/
+            margin-bottom:10px; /*This changes margin on the bottom of div*/
+            padding-top:20px;
+            padding-left:20px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div style="border-style:solid;border-color:blueviolet;border-width:5px;
-height:200px;width:300px;border-radius:20px;">
-        This is a div
+    <span style="background-color: #214495; width: 100px; height: 50px;">
+    <span style="color:azure;font-size:19px;">M</span>
+    <span style="color:aquamarine;font-size:17px;">I</span>
+    <span style="color:azure;font-size:19px">S</span>
+    3033</span>                                                         <!--Span will not fill the page and height and width do not work on them--> 
+
+    <span style="background-color:red;">MIS3033</span>
+    <span style="background-color:lightgreen;">MIS3033</span>
+
+    <div style="background-color:orange;width:100px;
+         height:50px;border-style:solid;border-width:3px; /*This ones not updated in the view because we force set some of the requirements*/
+         border-color:grey;border-radius:10px;"> <!--Radius rounds the conner-->
+     MIS3033
     </div>
 
+
+    <div class="divstyle1" style="background-color:teal;">MIS3033</div> <!-- The class at the beginning calls our formatting function from the top-->
+    <div class="divstyle1" style="background-color:lightcoral;">MIS3033</div> <!--Div will occupy the whole line and width and height will work-->
+
+    <img src="img/MIS3033logo.png" style="width:300px;border-radius:50%"/> <!--You can also use percents for radius-->
+    <!--With a img you only specify a width or height, not both and you can write the style at the begininng or end-->
+
     <div>
-        <img src="img/cs.png" style="width:200px;"/>
+        <button>submit</button> <!--button-->
+        <br/>
+
+        <label for="name">Name: </label> <!--The for portion connects the label to the text box-->
+        <input id="name" type="text"/>
+        <br/>
+
+        Grade: <input type="text" /> 
+        <br/>
+
+        <input type="text" />
+        <br/>
+
     </div>
 
 </body>
