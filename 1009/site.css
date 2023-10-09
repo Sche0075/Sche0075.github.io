@@ -1,0 +1,34 @@
+<style >
+.titlestyle {
+    font-size: 20px;
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.divstyle1 {
+    width: 40px;
+    height: 50px;
+    border-style: solid;
+    background-color: deepskyblue;
+}
+
+* /*This will apply stop everything, even without specifying*/ {
+    /* border-style:dashed;
+            border-width:5px;
+            background-color:powderblue;
+            border-color:lime;*/
+}
+
+div /*This will apply to all divs*/ {
+    /*border-style:dashed;
+            border-width:50px;
+            border-color:red;*/
+}
+
+span {
+}
+
+#div1 /*This will allow for specific divs or variables that we want to use or call with "id" - Look at div 1 in body*/ {
+    background-color: deepskyblue;
+    height: 30px;
+}
