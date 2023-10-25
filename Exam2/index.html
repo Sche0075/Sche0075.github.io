@@ -7,15 +7,140 @@
 
     <style>
 
-        #maindiv
-        {
-            background-color:lightgrey;
-            width:2000px;
-            margin-right:auto;
-            margin-left:auto;
-
+        #maindiv {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
+        #header {
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        #div2 {
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #div3 {
+            height: 270px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #div4 {
+            height: 60px;
+            width: 800px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        #name {
+            width: 200px;
+            height: 70px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #examcode {
+            width: 200px;
+            height: 70px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #divleft {
+            height: 270px;
+            width: 510px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #divright {
+            height: 270px;
+            width: 290px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: row;
+            justify-items: start;
+            align-items: start;
+            text-transform: uppercase;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+
+        #divlefttop {
+            width: 510px;
+            height: 110px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #divrighttop {
+            width: 510px;
+            height: 160px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #images1 {
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+        }
 
     </style>
 
@@ -26,6 +151,99 @@
 <body>
 
     <div id="maindiv">
+
+
+        <div id="header">
+
+            <div id="name">
+                MIS 3033 Exam 2
+                <br>
+                Jameson Scheetz
+            </div>
+
+            <div id="examcode">
+                LNVR
+            </div>
+
+
+        </div>
+
+        <div id="div2">
+
+            <div>
+                <img src="static/head1.png" style="height:60px; border-radius:30px;" />
+            </div>
+
+            <div style="margin-left:20px;">
+                Jameson Scheetz
+                <br />
+                MIS Student
+            </div>
+
+            <div style="margin-left:20px;">
+                <img src="static/linkedin.png" style="height:30px;" />
+            </div>
+
+
+        </div>
+
+        <div id="div3">
+
+            <div id="divleft">
+
+                <div id="divlefttop">
+
+                    <span class="title">About Me:</span>
+                    I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development and Web API development.
+                    
+                </div>
+
+                <div id="divrighttop">
+                    <span class="title">Recent :</span>
+                    
+                  <div style="display: flex; flex-direction: row; justify-items: center; align-items: center;">
+                    <div style="display: flex; flex-direction: row; justify-items: center; align-items: center;">
+                        <img src="static/html.svg" style="height:100px;" />
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: row; justify-items: center; align-items: center;">
+                        <img src="static/css.svg" style="height:100px;" />
+                    </div>
+                    
+                    <div id="images">
+                        <img src="static/javascript.svg" style="height:100px;"/>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+
+            </div>
+
+            <div id="divright">
+
+                <span class="title">Recent News:</span>
+                <div style="display:flex; flex-direction:row; justify-content:center; align-items:center;font-size:17px;">
+                    <ul>
+
+                        <li>Learned C#</li>
+                        <li>Learned Entity Framework</li>
+                        <li>Learned <img src="static/sqlite.svg" style="height:40px;" /> </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="div4" style="font-weight:bold;font-size:20px;color:grey;">
+            Developed by Jameson Scheetz here for MIS 3033 Exam 2 <img src="static/logo.svg" style="height:50px;" />
+        </div>
+
+
 
 
 
@@ -50,3 +268,5 @@
 </body>
 
 </html>
+
+
